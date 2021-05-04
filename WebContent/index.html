@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+    <link rel ="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/1200px-SARS-CoV-2_without_background.png" type ="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<div class="container-fluid bg-light text-center my-3">
+    <h1 style="block-size: auto;"> COVID-19 DASHBOARD </h1>
+    </div>
+    <ul>
+        <li><a class="active" href="home.html">HOME</a></li>
+        <ul class="nav navbar-nav navbar-right"></ul>
+        <li><a class="active" href="epass1.jsp">APPLY E-PASS</a></li>
+        <li><a href="search.jsp">VIEW/DOWNLOAD EPASS</a></li>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> ADMIN LOGIN</a></ul></li>
+    </ul>
+
+<body>
+  
+
+<h1 style="text-align: center;">STATEWISE REPORT</h1>
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-3 text-warning">
+            <h5>CONFIRMED CASES</h5>
+            <p id ="confirmed"></p>
+        </div>
+        <div class="col-3 text-info">
+            <h5>ACTIVE CASES</h5>
+            <p id ="active"></p>
+        </div>
+        <div class="col-3 text-success ">
+            <h5>RECOVERED CASES</h5>
+            <p id ="recovered"></p>
+        </div>
+        <div class="col-3 text-danger ">
+            <h5>DEATH CASES</h5>
+            <p id ="deaths"></p>
+        </div>
+    </div>
+    <canvas id ="myChart"></canvas>
+    <canvas id ="myChart1"></canvas>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="script.js"></script>
+</html>
